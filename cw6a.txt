@@ -1,0 +1,37 @@
+(id_produktu, nazwa_produktu, id_klienta, nazwa_klienta, data_zamowienia, cena_produktu, iloœæ,VAT, suma_brutto, suma_netto) 
+
+zad1
+Id_produktu -> nazwa_produktu, cena_produktu, VAT
+id_klienta -> nazwa_klienta
+nazwa_klienta -> id_klienta
+nazwa_produktu -> id_produktu
+Id_produktu, data_zamówienia, Id_klienta -> nazwa_produktu, nazwa_klienta, cena_produktu, iloœæ, VAT, suma_brutto, suma_netto
+Id_produktu, data_zamówienia, nazwa_klienta -> nazwa_produktu, id_klienta, cena_produktu, iloœæ, VAT, suma_brutto, suma_netto
+nazwa_produktu, data_zamówienia, Id_klienta -> id_produktu, nazwa_klienta, cena_produktu, iloœæ, VAT, suma_brutto, suma_netto
+nazwa_produktu, data_zamówienia, nazwa_klienta -> id_produktu, id_klienta, cena_produktu, iloœæ, VAT, suma_brutto, suma_netto
+suma_netto, VAT -> suma_brutto
+suma_brutto, VAT -> suma_netto
+cena_produktu, iloœæ -> suma_netto
+cena_produktu, iloœæ, VAT -> suma_brutto
+
+
+zad 2
+Id_produktu+id_klienta+data_zamowienia
+nazwa_produktu+id_klienta+data_zamowienia
+Id_produktu+nazwa_klienta+data_zamowienia
+nazwa_produktu+nazwa_klienta+data_zamowienia
+
+
+zad3
+(id_pomieszczenia, numer_pomieszczenia, id_budynku, powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy)
+
+id_pomieszczenia -> numer_pomieszczenia, id_budynku, powierzchnia, liczba_okien, liczba_drzwi, ulica, miasto, kod_pocztowy
+numer_pomieszczenia,id_budynku -> id_pomieszczenia,powierzchnia,liczba_okien,liczba_drzwi,ulica,miasto,kod_pocztowy
+kod_pocztowy -> miasto
+miasto -> kod_pocztowy
+
+klucze kandyduj¹ce:
+id_pomieszczenia
+numer_pomieszczenia+id_budynku
+
+
